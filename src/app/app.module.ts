@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './shared/ui/alert/alert.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     LayoutModule,
     MaterialModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
   entryComponents: [AlertComponent],
-  // providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt' }],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt' }],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

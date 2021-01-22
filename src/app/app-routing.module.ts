@@ -9,7 +9,7 @@ import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component'
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'filmes',
+    redirectTo: 'movies',
     pathMatch: 'full',
   },
   {
@@ -30,7 +30,7 @@ const routes: Routes = [
     component: EditMoviesComponent,
     pathMatch: 'full',
   },
-  { path: '**', redirectTo: 'filmes' },
+  { path: '**', redirectTo: 'list' },
 ];
 
 @NgModule({
