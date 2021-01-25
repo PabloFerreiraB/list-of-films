@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { Movie } from '../../shared/models/movies';
+import { MoviesService } from '../../core/movies.service';
 import { ValidateFieldService } from '../../shared/services/validate-field.service';
+
+import { Movie } from '../../shared/models/movies';
 
 @Component({
   selector: 'app-register-movies',
@@ -12,7 +14,11 @@ import { ValidateFieldService } from '../../shared/services/validate-field.servi
 export class RegisterMoviesComponent implements OnInit {
   formRegister: FormGroup;
 
-  constructor(private fb: FormBuilder, public validate: ValidateFieldService) {}
+  constructor(
+    private fb: FormBuilder,
+    public validate: ValidateFieldService,
+    private moviesService: MoviesService
+  ) {}
 
   get f() {
     return this.formRegister.controls;
@@ -48,7 +54,18 @@ export class RegisterMoviesComponent implements OnInit {
       return;
     }
 
-    alert(JSON.stringify(this.formRegister.value, null, 4));
+    const movie = this.formRegister.getRawValue() as Movie;
+
+    this.save(movie);
+  }
+
+  private save(movie: Movie): void {
+    this.moviesService.save(movie).subscribe(() => {
+      alert('OK');
+
+      this.onResetForm();
+    }),
+      () => alert('ERRO');
   }
 
   onResetForm(): void {
