@@ -5,6 +5,9 @@ import { MoviesService } from '../../core/movies.service';
 import { ValidateFieldService } from '../../shared/services/validate-field.service';
 
 import { Movie } from '../../shared/models/movies';
+import { MatDialog } from '@angular/material/dialog';
+import { AlertComponent } from 'src/app/shared/ui/alert/alert.component';
+import { Alert } from 'src/app/shared/models/alert';
 
 @Component({
   selector: 'app-register-movies',
@@ -15,8 +18,9 @@ export class RegisterMoviesComponent implements OnInit {
   formRegister: FormGroup;
 
   constructor(
-    private fb: FormBuilder,
     public validate: ValidateFieldService,
+    public dialog: MatDialog,
+    private fb: FormBuilder,
     private moviesService: MoviesService
   ) {}
 
@@ -55,13 +59,21 @@ export class RegisterMoviesComponent implements OnInit {
     }
 
     const movie = this.formRegister.getRawValue() as Movie;
-
     this.save(movie);
   }
 
   private save(movie: Movie): void {
     this.moviesService.save(movie).subscribe(() => {
-      alert('OK');
+      const config = {
+        // width: '400px',
+        data: {
+          btnSuccess: 'Back to list',
+          btnCancel: 'Register a new movie',
+          btnColorCancel: 'primary',
+          existsBtnClose: true,
+        } as Alert,
+      };
+      const dialogRef = this.dialog.open(AlertComponent, config);
 
       this.onResetForm();
     }),
