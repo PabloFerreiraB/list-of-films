@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Movie } from '../../shared/models/movies';
+import { ValidateFieldService } from '../../shared/services/validate-field.service';
 
 @Component({
   selector: 'app-register-movies',
@@ -11,7 +12,11 @@ import { Movie } from '../../shared/models/movies';
 export class RegisterMoviesComponent implements OnInit {
   formRegister: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, public validate: ValidateFieldService) {}
+
+  get f() {
+    return this.formRegister.controls;
+  }
 
   ngOnInit(): void {
     this.initialForm(this.createFormWhite());
@@ -24,7 +29,7 @@ export class RegisterMoviesComponent implements OnInit {
         [
           Validators.required,
           Validators.minLength(2),
-          Validators.maxLength(256),
+          Validators.maxLength(80),
         ],
       ],
     });
@@ -37,6 +42,8 @@ export class RegisterMoviesComponent implements OnInit {
   }
 
   onSubmit(): void {
+    this.formRegister.markAllAsTouched();
+
     if (this.formRegister.invalid) {
       return;
     }
