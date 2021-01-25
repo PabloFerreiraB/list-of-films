@@ -7,18 +7,18 @@
       [formControlName]="controlName"
     />
 
-    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'required')">
-      Required field
-    </mat-error>
-
-    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'minlength')">
-      The field must be at least
-      {{ validate.validateLength(formControl, "minlength") }} characters
-    </mat-error>
-
-    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'maxlength')">
-      The field can be a maximum of
-      {{ validate.validateLength(formControl, "maxlength") }} characters
-    </mat-error>
+    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'required')"
+      >Required field</mat-error
+    >
+    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'minlength')"
+      >The field must be at least
+      {{ validate.validateLength(formControl, "minlength") }}
+      characters</mat-error
+    >
+    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'maxlength')"
+      >The field can be a maximum of
+      {{ validate.validateLength(formControl, "maxlength") }}
+      characters</mat-error
+    >
   </mat-form-field>
 </div>
