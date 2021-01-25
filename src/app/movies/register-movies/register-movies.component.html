@@ -9,23 +9,12 @@
       (ngReset)="onResetForm()"
     >
       <mat-card-content>
-        <mat-form-field class="full-width">
-          <input
-            matInput
-            placeholder="Title"
-            name="title"
-            formControlName="title"
-          />
-          <mat-error *ngIf="validate.hasErrorValidate(f.title, 'required')"
-            >Required field</mat-error
-          >
-          <mat-error *ngIf="validate.hasErrorValidate(f.title, 'minlength')"
-            >The field must be at least 2 characters</mat-error
-          >
-          <mat-error *ngIf="validate.hasErrorValidate(f.title, 'maxlength')"
-            >The field can be a maximum of 80 characters</mat-error
-          >
-        </mat-form-field>
+        <!-- Title -->
+        <app-input-text
+          title="Title"
+          controlName="title"
+          [formGroup]="formRegister"
+        ></app-input-text>
       </mat-card-content>
 
       <mat-card-actions>
