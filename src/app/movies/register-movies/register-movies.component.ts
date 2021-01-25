@@ -8,6 +8,8 @@ import { Movie } from '../../shared/models/movies';
 import { MatDialog } from '@angular/material/dialog';
 import { AlertComponent } from 'src/app/shared/ui/alert/alert.component';
 import { Alert } from 'src/app/shared/models/alert';
+import { Router } from '@angular/router';
+import { config } from 'rxjs';
 
 @Component({
   selector: 'app-register-movies',
@@ -21,7 +23,8 @@ export class RegisterMoviesComponent implements OnInit {
     public validate: ValidateFieldService,
     public dialog: MatDialog,
     private fb: FormBuilder,
-    private moviesService: MoviesService
+    private moviesService: MoviesService,
+    private router: Router
   ) {}
 
   get f() {
@@ -63,21 +66,41 @@ export class RegisterMoviesComponent implements OnInit {
   }
 
   private save(movie: Movie): void {
-    this.moviesService.save(movie).subscribe(() => {
-      const config = {
-        // width: '400px',
-        data: {
-          btnSuccess: 'Back to list',
-          btnCancel: 'Register a new movie',
-          btnColorCancel: 'primary',
-          existsBtnClose: true,
-        } as Alert,
-      };
-      const dialogRef = this.dialog.open(AlertComponent, config);
+    this.moviesService.save(movie).subscribe(
+      () => {
+        const config = {
+          // width: '400px',
+          data: {
+            btnSuccess: 'Back to list',
+            btnCancel: 'Register a new movie',
+            btnColorCancel: 'primary',
+            existsBtnClose: true,
+          } as Alert,
+        };
 
-      this.onResetForm();
-    }),
-      () => alert('ERRO');
+        const dialogRef = this.dialog.open(AlertComponent, config);
+
+        dialogRef.afterClosed().subscribe((option: boolean) => {
+          if (option) {
+            this.router.navigateByUrl('movies');
+          } else {
+            this.onResetForm();
+          }
+        });
+      },
+      () => {
+        const config = {
+          data: {
+            title: 'Error saving record',
+            description:
+              'The record has not been saved. Please try again later!',
+            btnSuccess: 'Close',
+          } as Alert,
+        };
+
+        this.dialog.open(AlertComponent, config);
+      }
+    );
   }
 
   onResetForm(): void {
