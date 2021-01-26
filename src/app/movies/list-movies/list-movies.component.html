@@ -1,1 +1,22 @@
-<p>list-movies works!</p>
+<mat-toolbar class="app-title">List of films</mat-toolbar>
+
+<div class="home-content">
+  <mat-card class="home-card" *ngFor="let movie of movies">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+
+      <mat-card-title>{{ movie.title }}</mat-card-title>
+      <mat-card-subtitle>Check this Home</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image src="../assets/img/angular-cli.png" alt="Angular CLI">
+
+    <mat-card-content>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dignissimos nemo illum, fuga, nesciunt deleniti culpa quaerat impedit ex nostrum consequatur eius?</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button color="warn" mat-raised-mat-stroked-button>Open</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

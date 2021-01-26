@@ -2,7 +2,7 @@
   "movies": [
     {
       "id": 1,
-      "titulo": "MIB: Homens de Preto",
+      "title": "MIB: Homens de Preto",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BOTlhYTVkMDktYzIyNC00NzlkLTlmN2ItOGEyMWQ4OTA2NDdmXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "1997-07-11T03:00:00.000Z",
       "descricao": "A police officer joins a secret organization that polices and monitors extraterrestrial interactions on Earth.",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "titulo": "MIB: Homens de Preto II ",
+      "title": "MIB: Homens de Preto II ",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTMxNDA0NTMxMV5BMl5BanBnXkFtZTYwMDE2NzY2._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2012-07-19T03:00:00.000Z",
       "descricao": "Agent J is sent to find Agent K and restore his memory after the re-appearance of a case from K's past.",
@@ -22,7 +22,7 @@
     },
     {
       "id": 3,
-      "titulo": "MIB: Homens de Preto III",
+      "title": "MIB: Homens de Preto III",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTU2NTYxODcwMF5BMl5BanBnXkFtZTcwNDk1NDY0Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2012-25-11T03:00:00.000Z",
       "descricao": "Agent J travels in time to M.I.B.'s early days in 1969 to stop an alien from assassinating his friend Agent K and changing history.",
@@ -32,7 +32,7 @@
     },
     {
       "id": 4,
-      "titulo": "MIB: Homens de Preto - Internacional",
+      "title": "MIB: Homens de Preto - Internacional",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMDZkODI2ZGItYTY5Yi00MTA4LWExY2ItM2ZmNjczYjM0NDg1XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-13-11T03:00:00.000Z",
       "descricao": "The Men in Black have always protected the Earth from the scum of the universe. In this new adventure, they tackle their biggest threat to date: a mole in the Men in Black organization.",
@@ -42,7 +42,7 @@
     },
     {
       "id": 5,
-      "titulo": "Coringa",
+      "title": "Coringa",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-10-03T03:00:00.000Z",
       "descricao": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
@@ -52,7 +52,7 @@
     },
     {
       "id": 6,
-      "titulo": "Vingadores: Ultimato",
+      "title": "Vingadores: Ultimato",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-04-25T03:00:00.000Z",
       "descricao": "After the devastating events of Vingadores: Guerra Infinita (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
@@ -62,7 +62,7 @@
     },
     {
       "id": 7,
-      "titulo": "Capitã Marvel",
+      "title": "Capitã Marvel",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-03-07T03:00:00.000Z",
       "descricao": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
@@ -72,7 +72,7 @@
     },
     {
       "id": 8,
-      "titulo": "Shazam!",
+      "title": "Shazam!",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BYTE0Yjc1NzUtMjFjMC00Y2I3LTg3NGYtNGRlMGJhYThjMTJmXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-04-04T03:00:00.000Z",
       "descricao": "A newly fostered young boy in search of his mother instead finds unexpected super powers and soon gains a powerful enemy.",
@@ -82,7 +82,7 @@
     },
     {
       "id": 9,
-      "titulo": "John Wick 3: Parabellum",
+      "title": "John Wick 3: Parabellum",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMDg2YzI0ODctYjliMy00NTU0LTkxODYtYTNkNjQwMzVmOTcxXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-05-16T03:00:00.000Z",
       "descricao": "John Wick is on the run after killing a member of the international assassin's guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.",
@@ -91,7 +91,7 @@
       "genero": "Ação"
     },
     {
-      "titulo": "Mistério no Mediterrâneo",
+      "title": "Mistério no Mediterrâneo",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BNTA2YTI5YjUtZWI4Zi00NWQ5LWFiYmEtOTBmNTUyNDAwNjllXkEyXkFqcGdeQXVyNjIzNzM4NzA@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-06-14T03:00:00.000Z",
       "descricao": "A New York cop and his wife go on a European vacation to reinvigorate the spark in their marriage, but end up getting framed and on the run for the death of an elderly billionaire.",
@@ -101,7 +101,7 @@
       "id": 10
     },
     {
-      "titulo": "Star Wars: A Ascensão Skywalker",
+      "title": "Star Wars: A Ascensão Skywalker",
       "urlFoto": "https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "dtLancamento": "2019-12-19T03:00:00.000Z",
       "descricao": "In Theaters Now\nAfter Palpatine mysteriously returns, the Resistance faces the First Order once more in the final chapter of the Skywalker saga.",
@@ -111,216 +111,8 @@
       "id": 11
     },
     {
-      "title": "teste",
+      "title": "TESTE",
       "id": 12
-    },
-    {
-      "title": "aaaaa",
-      "id": 13
-    },
-    {
-      "title": "testeste",
-      "id": 14
-    },
-    {
-      "title": "teste2 2",
-      "id": 15
-    },
-    {
-      "title": "asdasdasd",
-      "id": 16
-    },
-    {
-      "title": "aaaa",
-      "id": 17
-    },
-    {
-      "title": "teste",
-      "id": 18
-    },
-    {
-      "title": "ste",
-      "id": 19
-    },
-    {
-      "title": "asdasdasd",
-      "id": 20
-    },
-    {
-      "title": "asd",
-      "id": 21
-    },
-    {
-      "title": "asdasdasd",
-      "id": 22
-    },
-    {
-      "title": "aaa",
-      "id": 23
-    },
-    {
-      "title": "asdasd",
-      "id": 24
-    },
-    {
-      "title": "adasdasd",
-      "id": 25
-    },
-    {
-      "title": "asdasd",
-      "id": 26
-    },
-    {
-      "title": "asdasd",
-      "id": 27
-    },
-    {
-      "title": "asdasd",
-      "id": 28
-    },
-    {
-      "title": "asdasdasd",
-      "id": 29
-    },
-    {
-      "title": "asdasd",
-      "id": 30
-    },
-    {
-      "title": "asdas",
-      "id": 31
-    },
-    {
-      "title": "asdasd",
-      "id": 32
-    },
-    {
-      "title": "sadasd",
-      "id": 33
-    },
-    {
-      "title": "asdasd",
-      "id": 34
-    },
-    {
-      "title": "asdasdasd",
-      "id": 35
-    },
-    {
-      "title": "asd",
-      "id": 36
-    },
-    {
-      "title": "asd",
-      "id": 37
-    },
-    {
-      "title": "asdasd",
-      "id": 38
-    },
-    {
-      "title": "asdasd",
-      "id": 39
-    },
-    {
-      "title": "asd",
-      "id": 40
-    },
-    {
-      "title": "asdsa",
-      "id": 41
-    },
-    {
-      "title": "asdasd",
-      "id": 42
-    },
-    {
-      "title": "asdasd",
-      "id": 43
-    },
-    {
-      "title": "asdasd",
-      "id": 44
-    },
-    {
-      "title": "asdasd",
-      "id": 45
-    },
-    {
-      "title": "asd",
-      "id": 46
-    },
-    {
-      "title": "asdsad",
-      "id": 47
-    },
-    {
-      "title": "asdasd",
-      "id": 48
-    },
-    {
-      "title": "asdasd",
-      "id": 49
-    },
-    {
-      "title": "asdasd",
-      "id": 50
-    },
-    {
-      "title": "asdasd",
-      "id": 51
-    },
-    {
-      "title": "asdasd",
-      "id": 52
-    },
-    {
-      "title": "asdasd",
-      "id": 53
-    },
-    {
-      "title": "asdasd",
-      "id": 54
-    },
-    {
-      "title": "asasdsad",
-      "id": 55
-    },
-    {
-      "title": "aasdasd",
-      "id": 56
-    },
-    {
-      "title": "asdasd",
-      "id": 57
-    },
-    {
-      "title": "asdsad",
-      "id": 58
-    },
-    {
-      "title": "asdf",
-      "id": 59
-    },
-    {
-      "title": "asdasd",
-      "id": 60
-    },
-    {
-      "title": "asdasd",
-      "id": 61
-    },
-    {
-      "title": "asdasd",
-      "id": 62
-    },
-    {
-      "title": "sadasd",
-      "id": 63
-    },
-    {
-      "title": "asdasdsd",
-      "id": 64
     }
   ]
 }
