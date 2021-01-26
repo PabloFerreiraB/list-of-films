@@ -1,11 +1,7 @@
 <div [formGroup]="formGroup">
   <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Title</mat-label>
-    <input
-      matInput
-      [name]="controlName"
-      [formControlName]="controlName"
-    />
+    <mat-label>{{ label }}</mat-label>
+    <input matInput [name]="controlName" [formControlName]="controlName" />
 
     <mat-error *ngIf="validate.hasErrorValidate(formControl, 'required')"
       >Required field</mat-error

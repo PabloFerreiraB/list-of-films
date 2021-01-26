@@ -8,7 +8,7 @@ import { ValidateFieldService } from '../../services/validate-field.service';
   styleUrls: ['./input-text.component.scss'],
 })
 export class InputTextComponent {
-  @Input() title: string;
+  @Input() label: string;
   @Input() formGroup: FormGroup;
   @Input() controlName: string;
 
