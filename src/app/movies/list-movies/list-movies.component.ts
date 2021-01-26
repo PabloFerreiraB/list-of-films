@@ -6,19 +6,20 @@ import { Movie } from '../../shared/models/movies';
 @Component({
   selector: 'app-list-movies',
   templateUrl: './list-movies.component.html',
-  styleUrls: ['./list-movies.component.scss']
+  styleUrls: ['./list-movies.component.scss'],
 })
 export class ListMoviesComponent implements OnInit {
-
   movies: Movie[];
 
-  constructor(private moviesService: MoviesService) { }
+  constructor(private moviesService: MoviesService) {}
 
   ngOnInit(): void {
     this.get();
   }
 
   get(): void {
-    this.moviesService.getAll().subscribe((movies: Movie[]) => this.movies = movies)
+    this.moviesService
+      .getAll()
+      .subscribe((movies: Movie[]) => (this.movies = movies));
   }
 }
