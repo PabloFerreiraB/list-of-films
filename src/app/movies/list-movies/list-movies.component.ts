@@ -12,6 +12,7 @@ import { Movie } from '../../shared/models/movies';
 export class ListMoviesComponent implements OnInit {
   formListing: FormGroup;
   movies: Movie[];
+  search: string;
 
   constructor(private fb: FormBuilder, private moviesService: MoviesService) {}
 
@@ -21,21 +22,27 @@ export class ListMoviesComponent implements OnInit {
     this.filter();
   }
 
-  initialForm(): void {
+  private initialForm(): void {
     this.formListing = this.fb.group({
-      texto: [''],
+      search: [''],
     });
   }
 
-  get(): void {
+  private get(): void {
     this.moviesService
-      .getAll()
+      .getAll(this.search)
       .subscribe((movies: Movie[]) => (this.movies = movies));
   }
 
-  filter(): void {
-    this.formListing.valueChanges.subscribe((value: string) => {
-      console.log('Detectado');
+  private filter(): void {
+    this.formListing.get('search').valueChanges.subscribe((value: string) => {
+      this.search = value;
+      this.resetFilter();
     });
+  }
+
+  private resetFilter(): void {
+    this.movies = [];
+    this.get();
   }
 }

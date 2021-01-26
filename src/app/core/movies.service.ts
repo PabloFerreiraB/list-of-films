@@ -16,7 +16,14 @@ export class MoviesService {
     return this.http.post<Movie>(url, movie);
   }
 
-  getAll(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(url);
+  getAll(search: string): Observable<Movie[]> {
+    let httpparams = new HttpParams();
+    search ? (httpparams = httpparams.set('q', search)) : null;
+
+    // Default JSON Server
+    httpparams = httpparams.set('_sort', 'id');
+    httpparams = httpparams.set('_order', 'desc');
+
+    return this.http.get<Movie[]>(url, { params: httpparams });
   }
 }
