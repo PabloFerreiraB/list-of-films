@@ -3,14 +3,14 @@
   flex-wrap: wrap;
   width: calc(100% - 20px);
   justify-content: space-between;
-   padding: 10px;
+  padding: 10px;
+
   .home-card {
     margin-bottom: 10px;
-
   }
 }
 
-.filtro-listagem {
+.filter-listing {
   width: calc(100% - 50px);
 }
 
@@ -38,9 +38,9 @@
 }
 
 @media screen and (min-width: 1300px) {
-    .home-content {
-      .home-card {
-        width: calc(25% - 52px);
-      }
+  .home-content {
+    .home-card {
+      width: calc(25% - 52px);
     }
   }
+}

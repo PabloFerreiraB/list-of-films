@@ -44,6 +44,14 @@ body {
   padding: 10px;
 }
 
-.quebrar-linha {
+.break-line {
   white-space: pre-line;
+}
+
+@media screen and (min-width: 525px) {
+}
+@media (max-width: 600px) {
+  .width50 {
+    width: 100% !important;
+  }
 }

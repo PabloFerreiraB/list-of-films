@@ -1,5 +1,17 @@
 <mat-toolbar class="app-title">List of films</mat-toolbar>
 
+<mat-card class="center margin10 filter-listing">
+  <form autocomplete="off" novalidate [formGroup]="formListing">
+    <div class="width50">
+      <app-input-text
+        label="Search"
+        controlName="texto"
+        [formGroup]="formListing"
+      ></app-input-text>
+    </div>
+  </form>
+</mat-card>
+
 <div class="home-content">
   <mat-card class="home-card" *ngFor="let movie of movies">
     <mat-card-header>
