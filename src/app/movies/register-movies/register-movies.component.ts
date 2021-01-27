@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+import { MatDialog } from '@angular/material/dialog';
 
 import { MoviesService } from '../../core/movies.service';
 import { ValidateFieldService } from '../../shared/services/validate-field.service';
 
 import { Movie } from '../../shared/models/movies';
-import { MatDialog } from '@angular/material/dialog';
-import { AlertComponent } from 'src/app/shared/ui/alert/alert.component';
 import { Alert } from 'src/app/shared/models/alert';
-import { Router } from '@angular/router';
-import { config } from 'rxjs';
+
+import { AlertComponent } from 'src/app/shared/ui/alert/alert.component';
 
 @Component({
   selector: 'app-register-movies',
@@ -18,6 +19,7 @@ import { config } from 'rxjs';
 })
 export class RegisterMoviesComponent implements OnInit {
   formRegister: FormGroup;
+  genres: Array<string>;
 
   constructor(
     public validate: ValidateFieldService,
@@ -33,6 +35,7 @@ export class RegisterMoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.initialForm(this.createFormWhite());
+    this.getGenre();
   }
 
   private initialForm(movie: Movie): void {
@@ -45,12 +48,22 @@ export class RegisterMoviesComponent implements OnInit {
           Validators.maxLength(80),
         ],
       ],
+      urlPhoto: [movie.urlPhoto, ''],
+      dateRelease: [movie.dateRelease, [Validators.required]],
+      description: [movie.description, ''],
+      urlIMDb: [movie.urlIMDb, [Validators.required]],
+      genre: [movie.genre, [Validators.required]],
     });
   }
 
   private createFormWhite(): Movie {
     return {
       title: null,
+      urlPhoto: null,
+      dateRelease: null,
+      description: null,
+      urlIMDb: null,
+      genre: null,
     } as Movie;
   }
 
@@ -101,6 +114,17 @@ export class RegisterMoviesComponent implements OnInit {
         this.dialog.open(AlertComponent, config);
       }
     );
+  }
+
+  getGenre() {
+    this.genres = [
+      'Action',
+      'Romance',
+      'Adventure',
+      'Horror',
+      'Comedy',
+      'Science fiction',
+    ];
   }
 
   onResetForm(): void {

@@ -15,9 +15,45 @@
           controlName="title"
           [formGroup]="formRegister"
         ></app-input-text>
+
+        <!-- URL Photo -->
+        <app-input-text
+          label="Url Photo"
+          controlName="urlPhoto"
+          [formGroup]="formRegister"
+        ></app-input-text>
+
+        <!-- Date Release -->
+        <app-input-date
+          label="Date Release"
+          controlName="dateRelease"
+          [formGroup]="formRegister"
+        ></app-input-date>
+
+        <!-- Description -->
+        <app-input-textarea
+          label="Description"
+          controlName="description"
+          [formGroup]="formRegister"
+        ></app-input-textarea>
+
+        <!-- Url IMDb -->
+        <app-input-text
+          label="Url IMDb"
+          controlName="urlIMDb"
+          [formGroup]="formRegister"
+        ></app-input-text>
+
+        <!-- Genre -->
+        <app-input-select
+          label="Select genre"
+          controlName="genre"
+          [formGroup]="formRegister"
+          [options]="genres"
+        ></app-input-select>
       </mat-card-content>
 
-      <mat-card-actions>
+      <mat-card-actions class="float-right">
         <button type="reset" color="warn" mat-raised-button>Cancel</button>
         <button type="submit" color="primary" mat-raised-button>Save</button>
       </mat-card-actions>

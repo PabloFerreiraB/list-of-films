@@ -1,1 +1,13 @@
-<p>input-textarea works!</p>
+<div [formGroup]="formGroup">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>{{ label }}</mat-label>
+    <textarea
+      cols="30"
+      rows="3"
+      matInput
+      [name]="controlName"
+      [formControlName]="controlName"
+    >
+    </textarea>
+  </mat-form-field>
+</div>

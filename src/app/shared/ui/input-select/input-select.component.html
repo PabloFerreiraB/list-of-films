@@ -1,1 +1,15 @@
-<p>input-select works!</p>
+<div [formGroup]="formGroup">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>{{ label }}</mat-label>
+
+    <mat-select [formControlName]="controlName">
+      <mat-option [value]="option" *ngFor="let option of options">{{
+        option
+      }}</mat-option>
+    </mat-select>
+
+    <mat-error *ngIf="validate.hasErrorValidate(formControl, 'required')"
+      >Required field</mat-error
+    >
+  </mat-form-field>
+</div>

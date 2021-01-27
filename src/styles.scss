@@ -18,6 +18,10 @@ body {
   width: 50%;
 }
 
+.margin4 {
+  margin: 4px;
+}
+
 .width75 {
   width: 75%;
 }
@@ -34,6 +38,10 @@ body {
 
 .float-left {
   float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 .margin10 {
@@ -53,9 +61,7 @@ body {
   white-space: pre-line;
 }
 
-@media screen and (min-width: 525px) {
-}
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .width50 {
     width: 100% !important;
   }
