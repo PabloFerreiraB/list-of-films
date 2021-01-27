@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { debounceTime } from 'rxjs/operators';
 
 import { MoviesService } from 'src/app/core/movies.service';
 import { Movie } from '../../shared/models/movies';
@@ -38,10 +39,13 @@ export class ListMoviesComponent implements OnInit {
   }
 
   private filter(): void {
-    this.formListing.get('search').valueChanges.subscribe((value: string) => {
-      this.config.search = value;
-      this.resetFilter();
-    });
+    this.formListing
+      .get('search')
+      .valueChanges.pipe(debounceTime(400))
+      .subscribe((value: string) => {
+        this.config.search = value;
+        this.resetFilter();
+      });
   }
 
   private resetFilter(): void {

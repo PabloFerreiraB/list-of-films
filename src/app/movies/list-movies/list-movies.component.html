@@ -12,7 +12,7 @@
   </form>
 </mat-card>
 
-<div class="home-content" *ngIf="movies.length; else noRecords">
+<div class="home-content" *ngIf="movies?.length; else noRecords">
   <mat-card class="home-card" *ngFor="let movie of movies">
     <mat-card-header>
       <div mat-card-avatar></div>
