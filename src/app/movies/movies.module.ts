@@ -5,16 +5,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UiModule } from '../shared/ui/ui.module';
 import { MaterialModule } from '../shared/material/material.module';
 
-import { RegisterMoviesComponent } from './register-movies/register-movies.component';
-import { EditMoviesComponent } from './edit-movies/edit-movies.component';
 import { ListMoviesComponent } from './list-movies/list-movies.component';
+import { RegisterEditMoviesComponent } from './register-edit-movies/register-edit-movies.component';
 
 @NgModule({
-  declarations: [
-    RegisterMoviesComponent,
-    EditMoviesComponent,
-    ListMoviesComponent,
-  ],
+  declarations: [RegisterEditMoviesComponent, ListMoviesComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

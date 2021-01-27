@@ -6,6 +6,7 @@
       <app-input-text
         label="Search"
         controlName="search"
+        edit-
         [formGroup]="formListing"
       ></app-input-text>
     </div>
@@ -22,19 +23,21 @@
     <img mat-card-image [src]="movie.urlPhoto || noPhoto" />
 
     <mat-card-content>
-      <p class="break-line">{{ movie.description || noDescription }}</p>
+      <p class="break-line">
+        {{ movie.description || noDescription }}
+      </p>
     </mat-card-content>
 
     <mat-card-actions class="float-right">
       <button type="reset" color="warn" mat-raised-button>Delete</button>
-      <!-- <button
+      <button
         type="submit"
         color="primary"
         mat-raised-button
         (click)="edit(movie.id)"
       >
         Edit
-      </button> -->
+      </button>
     </mat-card-actions>
   </mat-card>
 </div>

@@ -14,10 +14,10 @@ import { AlertComponent } from 'src/app/shared/ui/alert/alert.component';
 
 @Component({
   selector: 'app-register-movies',
-  templateUrl: './register-movies.component.html',
-  styleUrls: ['./register-movies.component.scss'],
+  templateUrl: './register-edit-movies.component.html',
+  styleUrls: ['./register-edit-movies.component.scss'],
 })
-export class RegisterMoviesComponent implements OnInit {
+export class RegisterEditMoviesComponent implements OnInit {
   formRegister: FormGroup;
   genres: Array<string>;
 

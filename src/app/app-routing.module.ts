@@ -3,8 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MoviesModule } from './movies/movies.module';
 
 import { ListMoviesComponent } from './movies/list-movies/list-movies.component';
-import { RegisterMoviesComponent } from './movies/register-movies/register-movies.component';
-import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
+import { RegisterEditMoviesComponent } from './movies/register-edit-movies/register-edit-movies.component';
 
 const routes: Routes = [
   {
@@ -20,15 +19,14 @@ const routes: Routes = [
         component: ListMoviesComponent,
       },
       {
+        path: 'new',
+        component: RegisterEditMoviesComponent,
+      },
+      {
         path: ':id',
-        component: RegisterMoviesComponent,
+        component: RegisterEditMoviesComponent,
       },
     ],
-  },
-  {
-    path: ':id',
-    component: EditMoviesComponent,
-    pathMatch: 'full',
   },
   { path: '**', redirectTo: 'movies' },
 ];

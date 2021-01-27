@@ -33,9 +33,9 @@ export class ListMoviesComponent implements OnInit {
     this.filter();
   }
 
-  // edit(id: number): void {
-  //   this.router.navigateByUrl('/movies/' + id);
-  // }
+  edit(id: number): void {
+    this.router.navigateByUrl('/movies/' + id);
+  }
 
   private initialForm(): void {
     this.formListing = this.fb.group({
