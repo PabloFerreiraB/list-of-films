@@ -17,6 +17,8 @@ export class ListMoviesComponent implements OnInit {
   config: ConfigParams = {
     search: '',
   };
+  readonly noPhoto = '../assets/img/noPhoto.png';
+  readonly noDescription = 'No description';
 
   constructor(private fb: FormBuilder, private moviesService: MoviesService) {}
 
