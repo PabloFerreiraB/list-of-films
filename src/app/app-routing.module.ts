@@ -30,7 +30,7 @@ const routes: Routes = [
     component: EditMoviesComponent,
     pathMatch: 'full',
   },
-  { path: '**', redirectTo: 'list' },
+  { path: '**', redirectTo: 'movies' },
 ];
 
 @NgModule({

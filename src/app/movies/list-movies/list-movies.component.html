@@ -25,8 +25,16 @@
       <p class="break-line">{{ movie.description || noDescription }}</p>
     </mat-card-content>
 
-    <mat-card-actions>
-      <button color="warn" mat-raised-mat-stroked-button>Open</button>
+    <mat-card-actions class="float-right">
+      <button type="reset" color="warn" mat-raised-button>Delete</button>
+      <!-- <button
+        type="submit"
+        color="primary"
+        mat-raised-button
+        (click)="edit(movie.id)"
+      >
+        Edit
+      </button> -->
     </mat-card-actions>
   </mat-card>
 </div>
