@@ -3,9 +3,13 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime } from 'rxjs/operators';
 
+import { MatDialog } from '@angular/material/dialog';
+
 import { MoviesService } from 'src/app/core/movies.service';
 import { Movie } from '../../shared/models/movies';
 import { ConfigParams } from '../../shared/models/config-params';
+import { Alert } from 'src/app/shared/models/alert';
+import { AlertComponent } from 'src/app/shared/ui/alert/alert.component';
 
 @Component({
   selector: 'app-list-movies',
@@ -18,10 +22,12 @@ export class ListMoviesComponent implements OnInit {
   config: ConfigParams = {
     search: '',
   };
+  id: number;
   readonly noPhoto = '../assets/img/noPhoto.png';
   readonly noDescription = 'No description';
 
   constructor(
+    public dialog: MatDialog,
     private fb: FormBuilder,
     private moviesService: MoviesService,
     private router: Router
@@ -31,6 +37,29 @@ export class ListMoviesComponent implements OnInit {
     this.initialForm();
     this.get();
     this.filter();
+  }
+
+  delete(id: number): void {
+    const config = {
+      data: {
+        title: 'Você tem certeza que deseja excluir ?',
+        description: 'Caso tenha certeza é só confirmar no botão (Yes)',
+        btnSuccess: 'Yes',
+        btnCancel: 'No',
+        btnColorCancel: 'primary',
+        existsBtnClose: true,
+      } as Alert,
+    };
+
+    const dialogRef = this.dialog.open(AlertComponent, config);
+
+    dialogRef.afterClosed().subscribe((option: boolean) => {
+      if (option) {
+        this.moviesService.delete(id).subscribe(() => {
+          this.get();
+        });
+      }
+    });
   }
 
   edit(id: number): void {

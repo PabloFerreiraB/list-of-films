@@ -29,13 +29,10 @@
     </mat-card-content>
 
     <mat-card-actions class="float-right">
-      <button type="reset" color="warn" mat-raised-button>Delete</button>
-      <button
-        type="submit"
-        color="primary"
-        mat-raised-button
-        (click)="edit(movie.id)"
-      >
+      <button color="warn" mat-raised-button (click)="delete(movie.id)">
+        Delete
+      </button>
+      <button color="primary" mat-raised-button (click)="edit(movie.id)">
         Edit
       </button>
     </mat-card-actions>
