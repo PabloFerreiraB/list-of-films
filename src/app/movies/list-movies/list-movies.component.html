@@ -1,12 +1,11 @@
 <mat-toolbar class="app-title">List of films</mat-toolbar>
 
-<mat-card class="center margin10 filter-listing">
+<mat-card class="center filter-listing">
   <form autocomplete="off" novalidate [formGroup]="formListing">
     <div class="width50">
       <app-input-text
         label="Search"
         controlName="search"
-        edit-
         [formGroup]="formListing"
       ></app-input-text>
     </div>

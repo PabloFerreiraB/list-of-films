@@ -6,7 +6,6 @@
       novalidate
       [formGroup]="formRegister"
       (ngSubmit)="onSubmit()"
-      (ngReset)="onResetForm()"
     >
       <mat-card-content>
         <!-- Title -->
@@ -53,8 +52,10 @@
         ></app-input-select>
       </mat-card-content>
 
-      <mat-card-actions class="float-right">
-        <button type="reset" color="warn" mat-raised-button>Cancel</button>
+      <mat-card-actions class="actions float-right">
+        <button color="warn" mat-raised-button (click)="cancel()">
+          Go to the list
+        </button>
         <button type="submit" color="primary" mat-raised-button>Save</button>
       </mat-card-actions>
     </form>

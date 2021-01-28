@@ -39,11 +39,15 @@ export class ListMoviesComponent implements OnInit {
     this.filter();
   }
 
+  edit(id: number): void {
+    this.router.navigateByUrl('/movies/' + id);
+  }
+
   delete(id: number): void {
     const config = {
       data: {
-        title: 'Você tem certeza que deseja excluir ?',
-        description: 'Caso tenha certeza é só confirmar no botão (Yes)',
+        title: 'Do you want to remove this film?',
+        description: 'This action cannot be undone.',
         btnSuccess: 'Yes',
         btnCancel: 'No',
         btnColorCancel: 'primary',
@@ -60,10 +64,6 @@ export class ListMoviesComponent implements OnInit {
         });
       }
     });
-  }
-
-  edit(id: number): void {
-    this.router.navigateByUrl('/movies/' + id);
   }
 
   private initialForm(): void {

@@ -30,7 +30,9 @@
         <mat-icon aria-label="Side nav toggle icon"> menu</mat-icon>
       </button>
 
-      <span>My list of films </span>
+      <a [routerLink]="['/movies']">
+        <img class="logotipo" src="../assets/img/logotipo.png" alt="Logotipo" />
+      </a>
 
       <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon>more_vert</mat-icon>
@@ -42,7 +44,7 @@
     </div>
 
     <!-- FOOTER -->
-    <app-footer></app-footer>
+    <!-- <app-footer></app-footer> -->
     <!--  -->
   </mat-sidenav-content>
 </mat-sidenav-container>

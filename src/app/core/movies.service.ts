@@ -31,4 +31,12 @@ export class MoviesService {
   delete(id: number): Observable<void> {
     return this.http.delete<void>(url + id);
   }
+
+  edit(movie: Movie): Observable<Movie> {
+    return this.http.put<Movie>(url + movie.id, movie);
+  }
+
+  view(id: number): Observable<Movie> {
+    return this.http.get<Movie>(url + id);
+  }
 }

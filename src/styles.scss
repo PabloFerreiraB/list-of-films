@@ -29,7 +29,7 @@ body {
 .main-div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .full-width {
@@ -52,11 +52,6 @@ body {
   padding: 10px;
 }
 
-.marginTop-padding {
-  padding: 20px;
-  margin-top: 40px;
-}
-
 .break-line {
   white-space: pre-line;
 }
@@ -69,4 +64,9 @@ body {
 
 .mat-card-image {
   margin-bottom: 10px !important;
+}
+
+.logotipo {
+  width: 48px;
+  height: 48px;
 }
