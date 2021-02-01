@@ -131,6 +131,8 @@ export class RegisterEditMoviesComponent implements OnInit {
         dialogRef.afterClosed().subscribe((option: boolean) => {
           if (option) {
             this.router.navigateByUrl('movies');
+          } else {
+            this.formRegister.reset();
           }
         });
       },
