@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { MatDialog } from '@angular/material/dialog';
 
-import { MoviesService } from '../../core/movies.service';
+import { MoviesService } from '../../core/services/movies.service';
 import { ValidateFieldService } from '../../shared/services/validate-field.service';
 
 import { Movie } from '../../shared/models/movies';

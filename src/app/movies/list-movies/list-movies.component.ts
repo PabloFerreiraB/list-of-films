@@ -5,7 +5,7 @@ import { debounceTime } from 'rxjs/operators';
 
 import { MatDialog } from '@angular/material/dialog';
 
-import { MoviesService } from 'src/app/core/movies.service';
+import { MoviesService } from 'src/app/core/services/movies.service';
 import { Movie } from '../../shared/models/movies';
 import { ConfigParams } from '../../shared/models/config-params';
 import { Alert } from 'src/app/shared/models/alert';

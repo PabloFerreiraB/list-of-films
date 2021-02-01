@@ -4,8 +4,8 @@ import { Observable } from 'rxjs';
 
 import { ConfigParamsService } from './config-params.service';
 
-import { Movie } from '../shared/models/movies';
-import { ConfigParams } from '../shared/models/config-params';
+import { Movie } from '../../shared/models/movies';
+import { ConfigParams } from '../../shared/models/config-params';
 
 const url = 'http://localhost:3000/movies/';
 
