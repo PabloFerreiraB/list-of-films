@@ -17,6 +17,15 @@
       "urlIMDb": "https://www.imdb.com/title/tt5034838/?ref_=vp_vi_tt",
       "genre": "Science fiction",
       "id": 3
+    },
+    {
+      "title": "Wrong Turn (2021)",
+      "urlPhoto": "",
+      "dateRelease": "2021-02-01T03:00:00.000Z",
+      "description": "Friends hiking the Appalachian Trail are confronted by 'The Foundation', a community of people who have lived in the mountains for hundreds of years.",
+      "urlIMDb": "asdasd",
+      "genre": "Horror",
+      "id": 4
     }
   ]
 }
