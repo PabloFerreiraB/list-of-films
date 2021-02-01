@@ -21,13 +21,13 @@
 
     <img mat-card-image [src]="movie.urlPhoto || noPhoto" />
 
-    <mat-card-content>
+    <mat-card-content class="description">
       <p class="break-line">
-        {{ movie.description || noDescription }}
+        {{ (movie.description | ellipsis: 100) || noDescription }}
       </p>
     </mat-card-content>
 
-    <mat-card-actions class="float-right">
+    <mat-card-actions class="actions float-right">
       <button color="warn" mat-raised-button (click)="delete(movie.id)">
         Delete
       </button>

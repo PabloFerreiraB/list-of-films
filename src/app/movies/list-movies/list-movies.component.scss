@@ -34,6 +34,16 @@
   margin-top: 180px;
 }
 
+.description {
+  margin-bottom: 60px;
+}
+
+.actions {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
 @media screen and (min-width: 525px) {
   .home-content {
     .home-card {

@@ -22,10 +22,100 @@
       "title": "Wrong Turn (2021)",
       "urlPhoto": "",
       "dateRelease": "2021-02-01T03:00:00.000Z",
-      "description": "Friends hiking the Appalachian Trail are confronted by 'The Foundation', a community of people who have lived in the mountains for hundreds of years.",
+      "description": "",
       "urlIMDb": "asdasd",
       "genre": "Horror",
       "id": 4
+    },
+    {
+      "title": "Wrong Turn (2021)",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BM2Y5ZWE2MTMtODE3ZC00NWQ4LWJkNzctNGY4Njg5NDY5MzNlXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2021-02-01T03:00:00.000Z",
+      "description": "Friends hiking the Appalachian Trail are confronted by 'The Foundation', a community of people who have lived in the mountains for hundreds of years.",
+      "urlIMDb": "https://www.imdb.com/title/tt9110170/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_32",
+      "genre": "Horror",
+      "id": 5
+    },
+    {
+      "title": "Gisaengchung",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2019-11-07T03:00:00.000Z",
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "urlIMDb": "https://www.imdb.com/title/tt6751668/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_39",
+      "genre": "Comedy",
+      "id": 6
+    },
+    {
+      "title": "Sound of Metal ",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BNjcyYjg0M2ItMzMyZS00NmM1LTlhZDMtN2MxN2RhNWY4YTkwXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2020-12-04T03:00:00.000Z",
+      "description": "A heavy-metal drummer's life is thrown into freefall when he begins to lose his hearing.",
+      "urlIMDb": "https://www.imdb.com/title/tt5363618/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_40",
+      "genre": "Romance",
+      "id": 7
+    },
+    {
+      "title": "The Godfather",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "dateRelease": "1972-09-10T03:00:00.000Z",
+      "description": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+      "urlIMDb": "https://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_61",
+      "genre": "Action",
+      "id": 8
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2002-01-01T02:00:00.000Z",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "urlIMDb": "https://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_66",
+      "genre": "Science fiction",
+      "id": 9
+    },
+    {
+      "title": "Inception",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2010-08-06T03:00:00.000Z",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "urlIMDb": "https://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_86",
+      "genre": "Action",
+      "id": 10
+    },
+    {
+      "title": "Interstellar",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2014-11-06T02:00:00.000Z",
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "urlIMDb": "https://www.imdb.com/title/tt0816692/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_75",
+      "genre": "Science fiction",
+      "id": 11
+    },
+    {
+      "title": "Titanic",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "1998-01-16T02:00:00.000Z",
+      "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+      "urlIMDb": "https://www.imdb.com/title/tt0120338/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_91",
+      "genre": "Adventure",
+      "id": 12
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2014-01-24T02:00:00.000Z",
+      "description": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.\n EN",
+      "urlIMDb": "https://www.imdb.com/title/tt0993846/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_34",
+      "genre": "Adventure",
+      "id": 13
+    },
+    {
+      "title": "Joker",
+      "urlPhoto": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dateRelease": "2019-10-03T03:00:00.000Z",
+      "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+      "urlIMDb": "https://www.imdb.com/title/tt7286456/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=ea4e08e1-c8a3-47b5-ac3a-75026647c16e&pf_rd_r=PARKAVBV7JG77XCE73FY&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_82",
+      "genre": "Horror",
+      "id": 14
     }
   ]
 }
