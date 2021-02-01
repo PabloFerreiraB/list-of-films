@@ -1,27 +1,22 @@
-# ListOfFilms
+# List of Films
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+## :man_technologist: Technologies
 
-## Development server
+- Angular 11
+- Angular Material
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project can be accessed [aqui](https://list-of-films.netlify.app/movies).
 
-## Code scaffolding
+## :page_with_curl: License
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Created in 2021.
+This project is under the [MIT License](https://choosealicense.com/licenses/mit/).
 
-## Build
+## :pencil: Author
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- <a href="https://www.linkedin.com/in/pabloferreirab/" target="_blank">LinkedIn</a>
+- <a href="https://pabloferreira.netlify.app/" target="_blank">Blog</a>
 
-## Running unit tests
+**Made by** **_Pablo Ferreira_**:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
