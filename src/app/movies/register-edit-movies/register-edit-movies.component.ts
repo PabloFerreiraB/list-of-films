@@ -21,6 +21,7 @@ export class RegisterEditMoviesComponent implements OnInit {
   formRegister: FormGroup;
   genres: Array<string>;
   id: number;
+  title: string;
 
   constructor(
     public validate: ValidateFieldService,
@@ -38,10 +39,13 @@ export class RegisterEditMoviesComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params['id'];
     if (this.id) {
+      this.title = 'Edit movie';
+
       this.moviesService
         .view(this.id)
         .subscribe((movie: Movie) => this.initialForm(movie));
     } else {
+      this.title = 'Register new movie';
       this.initialForm(this.createFormWhite());
     }
 
