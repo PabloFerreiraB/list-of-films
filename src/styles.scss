@@ -18,12 +18,26 @@ body {
   width: 50%;
 }
 
+.dflex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+  margin: 0.25em 8px !important;
+}
+
 .margin4 {
   margin: 4px;
 }
 
 .width75 {
   width: 75%;
+}
+
+.width25 {
+  width: 25%;
 }
 
 .main-div {

@@ -8,48 +8,60 @@
       (ngSubmit)="onSubmit()"
     >
       <mat-card-content>
-        <!-- Title -->
-        <app-input-text
-          label="Title"
-          controlName="title"
-          [formGroup]="formRegister"
-        ></app-input-text>
+        <div class="dflex">
+          <!-- Title -->
+          <app-input-text
+            class="width50"
+            label="Title"
+            controlName="title"
+            [formGroup]="formRegister"
+          ></app-input-text>
 
-        <!-- URL Photo -->
-        <app-input-text
-          label="Url Photo"
-          controlName="urlPhoto"
-          [formGroup]="formRegister"
-        ></app-input-text>
+          <!-- URL Photo -->
+          <app-input-text
+            class="width50"
+            label="Url Photo"
+            controlName="urlPhoto"
+            [formGroup]="formRegister"
+          ></app-input-text>
+        </div>
 
-        <!-- Date Release -->
-        <app-input-date
-          label="Date Release"
-          controlName="dateRelease"
-          [formGroup]="formRegister"
-        ></app-input-date>
+        <div class="dflex">
+          <!-- Url IMDb -->
+          <app-input-text
+            class="width50"
+            label="Url IMDb"
+            controlName="urlIMDb"
+            [formGroup]="formRegister"
+          ></app-input-text>
 
-        <!-- Description -->
-        <app-input-textarea
-          label="Description"
-          controlName="description"
-          [formGroup]="formRegister"
-        ></app-input-textarea>
+          <!-- Genre -->
+          <app-input-select
+            class="width25"
+            label="Select genre"
+            controlName="genre"
+            [formGroup]="formRegister"
+            [options]="genres"
+          ></app-input-select>
 
-        <!-- Url IMDb -->
-        <app-input-text
-          label="Url IMDb"
-          controlName="urlIMDb"
-          [formGroup]="formRegister"
-        ></app-input-text>
+          <!-- Date Release -->
+          <app-input-date
+            class="width25"
+            label="Date Release"
+            controlName="dateRelease"
+            [formGroup]="formRegister"
+          ></app-input-date>
+        </div>
 
-        <!-- Genre -->
-        <app-input-select
-          label="Select genre"
-          controlName="genre"
-          [formGroup]="formRegister"
-          [options]="genres"
-        ></app-input-select>
+        <div class="dflex">
+          <!-- Description -->
+          <app-input-textarea
+            class="full-width"
+            label="Description"
+            controlName="description"
+            [formGroup]="formRegister"
+          ></app-input-textarea>
+        </div>
       </mat-card-content>
 
       <mat-card-actions class="actions float-right">
